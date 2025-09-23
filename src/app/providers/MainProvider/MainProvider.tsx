@@ -1,0 +1,16 @@
+"use client";
+
+import { type FC } from "react";
+import { Toaster } from "react-hot-toast";
+
+import type { Props } from "./MainProviderProps";
+import { TanStackQueryProvider } from "../TanStackQueryProvider/TanStackQueryProvider";
+
+export const MainProvider: FC<Props> = ({ children }) => {
+	return (
+		<TanStackQueryProvider>
+			<Toaster />
+			{children}
+		</TanStackQueryProvider>
+	);
+};
