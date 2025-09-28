@@ -3,7 +3,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState, type FC } from "react";
 
-import type { Props } from "./TanStackQueryProviderProps";
+import type { Props } from "./TanStackQueryProvider.props";
 
 export const TanStackQueryProvider: FC<Props> = ({ children }) => {
 	const [client] = useState(
