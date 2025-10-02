@@ -5,13 +5,18 @@ import toast from "react-hot-toast";
 
 import type { IAuthForm } from "../types/auth.interface";
 import { authService } from "../services/auth.service";
-import { PUBLIC_URL } from "../config/url.config";
+import { DASHBOARD_URL } from "../config/url.config";
 
 export const useAuthForm = (isReg: boolean) => {
 	const router = useRouter();
 
 	const form = useForm<IAuthForm>({
 		mode: "onChange",
+		defaultValues: {
+			name: "",
+			email: "",
+			password: "",
+		},
 	});
 
 	const { mutate, isPending } = useMutation({
@@ -21,7 +26,7 @@ export const useAuthForm = (isReg: boolean) => {
 		onSuccess() {
 			form.reset();
 			toast.success("Успешная авторизация");
-			router.replace(PUBLIC_URL.home());
+			router.replace(DASHBOARD_URL.home());
 		},
 		onError(error) {
 			if (error.message) {

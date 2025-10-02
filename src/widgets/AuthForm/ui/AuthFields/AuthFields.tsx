@@ -5,6 +5,7 @@ import {
 	FormControl,
 	FormField,
 	FormItem,
+	FormMessage,
 	Input,
 } from "@/src/shared/shadcn/ui";
 import { validEmail } from "@/src/shared/regex";
@@ -24,6 +25,7 @@ export const AuthFields: FC<Props> = ({ form, isPending, isReg = false }) => {
 							<FormControl>
 								<Input placeholder="Имя" disabled={isPending} {...field} />
 							</FormControl>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -48,6 +50,7 @@ export const AuthFields: FC<Props> = ({ form, isPending, isReg = false }) => {
 								{...field}
 							/>
 						</FormControl>
+						<FormMessage />
 					</FormItem>
 				)}
 			/>
@@ -68,6 +71,7 @@ export const AuthFields: FC<Props> = ({ form, isPending, isReg = false }) => {
 								{...field}
 							/>
 						</FormControl>
+						<FormMessage />
 					</FormItem>
 				)}
 			/>
