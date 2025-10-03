@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const HomePage: FC = () => {
-	return <div></div>;
+	return <div>Home</div>;
 };
 
 export default HomePage;

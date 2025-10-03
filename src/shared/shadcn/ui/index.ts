@@ -20,3 +20,13 @@ export {
 	CardHeader,
 	CardTitle,
 } from "./Card";
+export {
+	Sheet,
+	SheetClose,
+	SheetContent,
+	SheetDescription,
+	SheetFooter,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from "./Sheet";

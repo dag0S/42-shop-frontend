@@ -5,9 +5,9 @@ import {
 	SITE_DESCRIPTION,
 	SITE_NAME,
 } from "@/src/shared/constants/seo.constants";
-
-import "../src/shared/styles/globals.css";
 import { MainProvider } from "@/src/app/providers/MainProvider/MainProvider";
+
+import "../../../shared/styles/globals.css";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
