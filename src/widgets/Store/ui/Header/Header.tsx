@@ -8,6 +8,7 @@ import { useProfile } from "@/src/shared/hooks";
 import { DASHBOARD_URL } from "@/src/shared/config/url.config";
 import { Loader } from "@/src/shared/ui";
 import { MobileSidebar } from "../MobileSidebar/MobileSidebar";
+import { StoreSwitcher } from "@/src/features/StoreSwitcher";
 
 export const Header: FC = () => {
 	const { user, isLoading } = useProfile();
@@ -21,6 +22,7 @@ export const Header: FC = () => {
 				) : (
 					user && (
 						<>
+							<StoreSwitcher items={user.stores} />
 							<Link href={DASHBOARD_URL.home()} />
 							<Image
 								src={user.picture}
