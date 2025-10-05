@@ -1,7 +1,7 @@
 export interface IMainStatistics {
 	id: number;
 	name: string;
-	value: string;
+	value: number;
 }
 
 export interface IMonthlySales {

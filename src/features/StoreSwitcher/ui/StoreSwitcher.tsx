@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, type FC } from "react";
+import { useRouter } from "next/navigation";
+import { ChevronsUpDown, Plus, StoreIcon } from "lucide-react";
 
 import { Props } from "./StoreSwitcher.props";
-import { useRouter } from "next/navigation";
 import { STORE_URL } from "@/src/shared/config/url.config";
 import {
 	Button,
@@ -18,10 +19,9 @@ import {
 	PopoverContent,
 	PopoverTrigger,
 } from "@/src/shared/shadcn/ui";
-import { ChevronsUpDown, Plus, StoreIcon } from "lucide-react";
-import { CreateStoreModal } from "@/src/shared/ui/CreateStoreModal";
+import { CreateStoreModal } from "@/src/shared/ui";
 
-export const StoreSwitcher: FC<Props> = ({ items, className }) => {
+export const StoreSwitcher: FC<Props> = ({ items }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const router = useRouter();
 

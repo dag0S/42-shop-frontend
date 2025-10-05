@@ -72,3 +72,12 @@ export {
 	PopoverContent,
 	PopoverTrigger,
 } from "./Popover";
+export {
+	type ChartConfig,
+	ChartContainer,
+	ChartLegend,
+	ChartLegendContent,
+	ChartStyle,
+	ChartTooltip,
+	ChartTooltipContent,
+} from "./Chart";
