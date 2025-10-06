@@ -3,7 +3,7 @@
 import { useState, type FC, type ReactNode } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-import { useCreateStore } from "../hooks/use-create-store";
+import { useCreateStore } from "../hooks";
 import type { IStoreCreate } from "../types/store.interface";
 import {
 	Button,

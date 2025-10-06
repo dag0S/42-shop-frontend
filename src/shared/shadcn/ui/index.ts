@@ -81,3 +81,4 @@ export {
 	ChartTooltip,
 	ChartTooltipContent,
 } from "./Chart";
+export { Textarea } from "./Textarea";

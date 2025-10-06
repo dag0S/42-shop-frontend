@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import { useGetStatistics } from "@/src/shared/hooks/use-get-statistics";
+import { useGetStatistics } from "@/src/shared/hooks";
 import { MainStatisticsItem } from "./MainStatisticsItem";
 
 export const MainStatistics: FC = () => {

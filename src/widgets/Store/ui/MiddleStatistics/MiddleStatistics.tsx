@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import { useGetStatistics } from "@/src/shared/hooks/use-get-statistics";
+import { useGetStatistics } from "@/src/shared/hooks";
 import { Overview } from "../Overview/Overview";
 import { LastUsers } from "../LastUsers/LastUsers";
 
