@@ -3,9 +3,9 @@ import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useMemo } from "react";
 
-import type { IStoreCreate } from "../types/store.interface";
-import { storeService } from "../services/store.service";
-import { STORE_URL } from "../config/url.config";
+import type { IStoreCreate } from "../../types/store.interface";
+import { storeService } from "../../services/store.service";
+import { STORE_URL } from "../../config/url.config";
 
 export const useCreateStore = () => {
 	const router = useRouter();

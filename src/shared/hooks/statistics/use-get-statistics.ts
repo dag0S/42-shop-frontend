@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
 
-import { statisticsService } from "../services/statistics.service";
+import { statisticsService } from "../../services/statistics.service";
 
 export const useGetStatistics = () => {
 	const params = useParams<{ storeId: string }>();

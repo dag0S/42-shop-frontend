@@ -9,10 +9,11 @@ export interface IProduct {
 	description: string;
 	price: number;
 	images: string[];
-	category: ICategory[];
+	category: ICategory;
 	reviews: IReview[];
 	color: IColor;
 	store: IStore;
+	storeId: string;
 }
 
 export interface IProductInput

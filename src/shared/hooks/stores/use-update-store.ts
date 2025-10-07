@@ -3,8 +3,8 @@ import { useParams } from "next/navigation";
 import toast from "react-hot-toast";
 import { useMemo } from "react";
 
-import { storeService } from "../services/store.service";
-import { IStoreEdit } from "../types/store.interface";
+import { storeService } from "../../services/store.service";
+import { IStoreEdit } from "../../types/store.interface";
 
 export const useUpdateStore = () => {
 	const params = useParams<{ storeId: string }>();

@@ -3,8 +3,8 @@ import { useParams, useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useMemo } from "react";
 
-import { storeService } from "../services/store.service";
-import { PUBLIC_URL } from "../config/url.config";
+import { storeService } from "../../services/store.service";
+import { PUBLIC_URL } from "../../config/url.config";
 
 export const useDeleteStore = () => {
 	const router = useRouter();

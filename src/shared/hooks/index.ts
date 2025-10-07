@@ -1,6 +1,10 @@
-export { useAuthForm } from "./use-auth-form.hook";
-export { useProfile } from "./use-profile.hook";
-export { useGetStatistics } from "./use-get-statistics";
-export { useCreateStore } from "./use-create-store";
-export { useUpdateStore } from "./use-update-store";
-export { useDeleteStore } from "./use-delete-store";
+export { useAuthForm } from "./use-auth-form";
+export { useProfile } from "./use-profile";
+export { useGetStatistics } from "./statistics/use-get-statistics";
+export { useCreateStore } from "./stores/use-create-store";
+export { useUpdateStore } from "./stores/use-update-store";
+export { useDeleteStore } from "./stores/use-delete-store";
+export { useUpdateProduct } from "./products/use-update-product";
+export { useCreateProduct } from "./products/use-create-product";
+export { useDeleteProduct } from "./products/use-delete-product";
+export { useGetProducts } from "./products/use-get-products";
