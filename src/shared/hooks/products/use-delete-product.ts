@@ -8,12 +8,12 @@ import { STORE_URL } from "../../config/url.config";
 
 export const useDeleteProduct = () => {
 	const router = useRouter();
-	const params = useParams<{ storeId: string }>();
+	const params = useParams<{ storeId: string; productId: string }>();
 	const queryClient = useQueryClient();
 
 	const { mutate: deleteProduct, isPending: isLoadingDelete } = useMutation({
 		mutationKey: ["delete product"],
-		mutationFn: () => productService.delete(params?.storeId || ""),
+		mutationFn: () => productService.delete(params?.productId || ""),
 		onSuccess() {
 			queryClient.invalidateQueries({
 				queryKey: ["get products for store dashboard"],

@@ -1,3 +1,5 @@
+"use client";
+
 import type { FC } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Trash } from "lucide-react";
@@ -9,7 +11,7 @@ import {
 	useDeleteProduct,
 	useUpdateProduct,
 } from "@/src/shared/hooks";
-import { ConfirmModal, Heading } from "@/src/shared/ui";
+import { ConfirmModal, Heading, ImageUpload } from "@/src/shared/ui";
 import {
 	Button,
 	Form,
@@ -79,7 +81,26 @@ export const ProductForm: FC<Props> = ({ categories, colors, product }) => {
 			</div>
 			<Form {...form}>
 				<form onSubmit={form.handleSubmit(onSubmit)}>
-					{/* Image upload */}
+					<FormField
+						control={form.control}
+						name="images"
+						rules={{
+							required: "Загрузите хотя бы одну картинку",
+						}}
+						render={({ field }) => (
+							<FormItem className="mt-4">
+								<FormLabel>Картинки</FormLabel>
+								<FormControl>
+									<ImageUpload
+										isDisable={isLoadingCreate || isLoadingUpdate}
+										onChange={field.onChange}
+										value={field.value}
+									/>
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
 					<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
 						<FormField
 							control={form.control}
