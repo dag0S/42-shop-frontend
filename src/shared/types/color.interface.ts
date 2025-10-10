@@ -1,6 +1,6 @@
 export interface IColor {
 	id: string;
-	createAt: string;
+	createdAt: string;
 	name: string;
 	value: string;
 	storeId: string;

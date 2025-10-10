@@ -32,7 +32,7 @@ import {
 
 export const ProductForm: FC<Props> = ({ categories, colors, product }) => {
 	const { createProduct, isLoadingCreate } = useCreateProduct();
-	const { isLoadingUpdate, updateProduct } = useUpdateProduct();
+	const { updateProduct, isLoadingUpdate } = useUpdateProduct();
 	const { deleteProduct, isLoadingDelete } = useDeleteProduct();
 
 	const title = product ? "Изменить данные" : "Создать товар";
