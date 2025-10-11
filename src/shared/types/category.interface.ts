@@ -1,6 +1,6 @@
 export interface ICategory {
 	id: string;
-	createAt: string;
+	createdAt: string;
 	title: string;
 	description: string;
 	storeId: string;
