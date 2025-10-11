@@ -1,7 +1,7 @@
 import { Header } from "@/src/widgets/Store/ui/Header/Header";
 import { Sidebar } from "@/src/widgets/Store/ui/Sidebar/Sidebar";
 
-export default function RootLayout({
+export default function StoreLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
