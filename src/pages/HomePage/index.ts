@@ -1,1 +1,1 @@
-export { metadata, default as HomePage } from "./ui/HomePage";
+export { revalidate, metadata, default as HomePage } from "./ui/HomePage";
