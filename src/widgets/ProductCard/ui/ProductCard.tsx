@@ -15,6 +15,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
 					alt={product.title}
 					width={300}
 					height={300}
+					objectFit="cover"
 					className="rounded-lg"
 				/>
 			</Link>
