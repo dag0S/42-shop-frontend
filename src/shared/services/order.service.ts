@@ -15,7 +15,7 @@ type TypeData = {
 class OrderService {
 	async place(data: TypeData) {
 		return await axiosWithAuth<IPaymentResponse>({
-			url: API_URL.orders("place"),
+			url: API_URL.orders("/place"),
 			method: "POST",
 			data,
 		});
