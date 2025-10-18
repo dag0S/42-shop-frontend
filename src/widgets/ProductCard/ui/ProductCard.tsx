@@ -8,7 +8,7 @@ import { formatPrice } from "@/src/shared/utils";
 
 export const ProductCard: FC<Props> = ({ product }) => {
 	return (
-		<div className="bg-white">
+		<div>
 			<Link href={PUBLIC_URL.product(product.id)}>
 				<Image
 					src={product.images[0]}
@@ -19,16 +19,16 @@ export const ProductCard: FC<Props> = ({ product }) => {
 					className="rounded-lg"
 				/>
 			</Link>
-			<h3 className="mt-4 font-semibold text-gray-700 line-clamp-1">
+			<h3 className="mt-4 font-semibold text-foreground line-clamp-1">
 				{product.title}
 			</h3>
 			<Link
 				href={PUBLIC_URL.category(product.category.id)}
-				className="mt-1 text-sm text-gray-500"
+				className="mt-1 text-sm text-muted-foreground"
 			>
 				{product.category.title}
 			</Link>
-			<p className="mt-1 font-medium text-sm text-gray-900">
+			<p className="mt-1 font-medium text-sm text-secondary-foreground">
 				{formatPrice(product.price)}
 			</p>
 		</div>

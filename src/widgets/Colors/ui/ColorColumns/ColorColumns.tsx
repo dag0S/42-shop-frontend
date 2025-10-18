@@ -45,7 +45,7 @@ export const ColorColumns: ColumnDef<IColor>[] = [
 			<div className="flex items-center gap-x-3">
 				{row.original.value}
 				<div
-					className="size-5 rounded-full border"
+					className="size-5 rounded-full border border-foreground"
 					style={{
 						backgroundColor: row.original.value,
 					}}

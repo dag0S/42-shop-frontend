@@ -5,7 +5,7 @@ import { Navigation } from "../Navigation/Navigation";
 
 export const Sidebar: FC = () => {
 	return (
-		<div className="h-full flex flex-col bg-neutral-50 border-r overflow-y-auto pt-4 px-5 my-1">
+		<div className="h-full flex flex-col border-r bg-card overflow-y-auto pt-4 px-5 my-1">
 			<Logo />
 			<Navigation />
 		</div>

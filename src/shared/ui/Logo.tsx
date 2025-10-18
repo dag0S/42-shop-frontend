@@ -4,15 +4,22 @@ import Image from "next/image";
 
 import { PUBLIC_URL } from "../config/url.config";
 import { SITE_NAME } from "../constants/seo.constants";
+import { cn } from "../lib/utils";
 
-export const Logo: FC = () => {
+interface Props {
+	className?: string;
+}
+
+export const Logo: FC<Props> = ({ className }) => {
 	return (
 		<Link
 			href={PUBLIC_URL.home()}
-			className="flex items-center gap-3 hover:opacity-75 transition-opacity text-2xl font-bold text-blue-600"
+			className={cn(
+				"flex items-center gap-3 hover:opacity-75 transition-opacity text-2xl font-bold text-blue-600",
+				className,
+			)}
 		>
-			<Image src="/images/42.jpg" alt={SITE_NAME} width={35} height={35} />
-			<div>{SITE_NAME}</div>
+			<Image src="/images/logo.svg" alt={SITE_NAME} width={150} height={36} />
 		</Link>
 	);
 };

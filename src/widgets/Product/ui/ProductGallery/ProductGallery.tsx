@@ -22,8 +22,8 @@ export const ProductGallery: FC<Props> = ({ product }) => {
 						key={index}
 						onClick={() => setCurrentIndex(index)}
 						className={cn(
-							"duration-300 border rounded-lg overflow-hidden",
-							index === currentIndex ? "border-black" : "border-transparent",
+							"duration-300 border-2 rounded-lg overflow-hidden",
+							index === currentIndex ? "border-primary" : "border-transparent",
 						)}
 					>
 						<Image src={image} alt={product.title} width={100} height={100} />

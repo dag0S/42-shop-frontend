@@ -6,14 +6,22 @@ import { Toaster } from "react-hot-toast";
 import type { Props } from "./MainProvider.props";
 import { TanStackQueryProvider } from "../TanStackQueryProvider/TanStackQueryProvider";
 import { StoreProvider } from "../StoreProvider";
+import { ThemeProvider } from "../ThemeProvider";
 
 export const MainProvider: FC<Props> = ({ children }) => {
 	return (
-		<TanStackQueryProvider>
-			<StoreProvider>
-				<Toaster />
-				{children}
-			</StoreProvider>
-		</TanStackQueryProvider>
+		<ThemeProvider
+			attribute="class"
+			defaultTheme="system"
+			enableSystem
+			disableTransitionOnChange
+		>
+			<TanStackQueryProvider>
+				<StoreProvider>
+					<Toaster />
+					{children}
+				</StoreProvider>
+			</TanStackQueryProvider>
+		</ThemeProvider>
 	);
 };

@@ -14,7 +14,7 @@ export const Header: FC = () => {
 	const { user, isLoading } = useProfile();
 
 	return (
-		<div className="p-6 gap-x-4 h-full flex items-center bg-white border-b">
+		<div className="p-6 gap-x-4 bg-background h-full flex items-center border-b">
 			<MobileSidebar />
 			<div className="flex items-center gap-x-4 ml-auto">
 				{isLoading ? (

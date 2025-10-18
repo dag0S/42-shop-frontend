@@ -29,11 +29,9 @@ export const LastUsers: FC<Props> = ({ data }) => {
 								height={40}
 								className="rounded-full"
 							/>
-							<div className="ml-4 space-y-1 text-sm text-muted-foreground">
-								<p className="leading-none text-black font-medium">
-									{user.name}
-								</p>
-								<p>{user.email}</p>
+							<div className="ml-4 space-y-1 text-sm">
+								<p className="leading-none font-medium">{user.name}</p>
+								<p className="text-muted-foreground">{user.email}</p>
 							</div>
 							<div className="ml-auto font-medium">
 								+{formatPrice(user.total)}

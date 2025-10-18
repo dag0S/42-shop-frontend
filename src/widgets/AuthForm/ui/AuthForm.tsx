@@ -18,6 +18,7 @@ import {
 } from "@/src/shared/shadcn/ui";
 import { AuthFields } from "./AuthFields/AuthFields";
 import { Social } from "./Social/Social";
+import { Logo } from "@/src/shared/ui";
 
 export const AuthForm: FC<Props> = ({ className }) => {
 	const [isReg, setIsReg] = useState(false);
@@ -27,13 +28,8 @@ export const AuthForm: FC<Props> = ({ className }) => {
 		<div
 			className={cn(className, "min-h-screen grid grid-cols-1 lg:grid-cols-2")}
 		>
-			<div className="h-full bg-blue-600 hidden lg:flex items-center justify-center">
-				<Image
-					src="/images/42.jpg"
-					alt="42 brothers"
-					width={100}
-					height={100}
-				/>
+			<div className="h-full bg-[url(/images/auth-bg.jpg)] bg-cover bg-center bg-no-repeat hidden lg:flex justify-center items-start">
+				<Logo className="mt-5" />
 			</div>
 			<div className="h-full flex flex-col items-center justify-center">
 				<Card className="border-none p-6 flex flex-col items-center justify-center w-[380px] gap-0">

@@ -5,7 +5,7 @@ import { Menu } from "./Menu/Menu";
 
 export const Header: FC = () => {
 	return (
-		<header className="p-5 gap-x-4 h-full flex items-center bg-white border-b">
+		<header className="p-5 gap-x-4 h-full flex items-center border-b">
 			<Logo />
 			<div className="ml-auto hidden w-[40%] lg:block">
 				<SearchInput />

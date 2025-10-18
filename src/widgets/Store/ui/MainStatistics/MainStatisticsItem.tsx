@@ -21,7 +21,7 @@ export const MainStatisticsItem: FC<Props> = ({ item }) => {
 	return (
 		<Card className="drop-shadow-sm">
 			<CardHeader className="p-4 flex flex-row items-center justify-between space-y-0 pb-2">
-				<CardTitle className="text-sm font-medium text-slate-500">
+				<CardTitle className="text-sm font-medium text-secondary-foreground">
 					{item.name}
 				</CardTitle>
 				<Icon className="size-5" />
