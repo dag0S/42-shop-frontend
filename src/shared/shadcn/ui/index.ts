@@ -122,3 +122,11 @@ export {
 	DropdownMenuSubTrigger,
 	DropdownMenuTrigger,
 } from "./DropdownMenu";
+export {
+	Carousel,
+	type CarouselApi,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "./Carousel";

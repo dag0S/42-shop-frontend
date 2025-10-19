@@ -8,15 +8,14 @@ import { formatPrice } from "@/src/shared/utils";
 
 export const ProductCard: FC<Props> = ({ product }) => {
 	return (
-		<div>
+		<div className="transition-all ease-in-out hover:scale-105">
 			<Link href={PUBLIC_URL.product(product.id)}>
 				<Image
 					src={product.images[0]}
 					alt={product.title}
 					width={300}
 					height={300}
-					objectFit="cover"
-					className="rounded-lg"
+					className="rounded-lg aspect-square object-cover"
 				/>
 			</Link>
 			<h3 className="mt-4 font-semibold text-foreground line-clamp-1">
