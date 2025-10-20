@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import type { Metadata } from "next";
+import { connection } from "next/server";
 
 import { productService } from "@/src/shared/services/product.service";
 import { Explorer } from "@/src/widgets/Explorer";
@@ -18,6 +19,7 @@ const getProducts = async () => {
 
 const ExplorerPage: FC = async () => {
 	const data = await getProducts();
+	await connection();
 
 	return <Explorer products={data} />;
 };
