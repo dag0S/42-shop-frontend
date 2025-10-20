@@ -2,7 +2,7 @@
 
 > Маркетплейс для стримеров 42-комьюнити, где продавцы могут создавать свои магазины и выкладывать товары.
 
-![Preview Screenshot](./public/preview.png)
+![Preview Screenshot](./public/images/sreenshots/home.png)
 
 ---
 
@@ -37,9 +37,9 @@
 
 ## Скриншоты
 
-| Главная страница | Детали | Авторизация |
+| Главная страница | Товар | Авторизация |
 |:-----------------:|:------:|:------------:|
-| ![Главная](./public/screens/main.png) | ![Детали](./public/screens/details.png) | ![Авторизация](./public/screens/login.png) |
+| ![Главная](./public/images/sreenshots/home.png) | ![Товар](./public/images/sreenshots/home.png) | ![Авторизация](./public/images/sreenshots/auth.png) |
 
 ---
 
