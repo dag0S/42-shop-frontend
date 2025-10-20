@@ -2,7 +2,7 @@
 
 > Маркетплейс для стримеров 42-комьюнити, где продавцы могут создавать свои магазины и выкладывать товары.
 
-![Preview Screenshot](./public/images/sreenshots/home.png)
+![Preview Screenshot](https://github.com/dag0S/42-shop-frontend/blob/master/public/images/screenshots/home.png)
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Стек технологий
 
-- **Next.js 15** 
+- **Next.js 15**
 - **TypeScript**
 - **Tailwind CSS**
 - **ShadCN/UI**
@@ -37,9 +37,9 @@
 
 ## Скриншоты
 
-| Главная страница | Товар | Авторизация |
-|:-----------------:|:------:|:------------:|
-| ![Главная](./public/images/sreenshots/home.png) | ![Товар](./public/images/sreenshots/home.png) | ![Авторизация](./public/images/sreenshots/auth.png) |
+|                                           Главная страница                                           |                                                 Товар                                                 |                                               Авторизация                                                |
+| :--------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| ![Главная](https://github.com/dag0S/42-shop-frontend/blob/master/public/images/screenshots/home.png) | ![Товар](https://github.com/dag0S/42-shop-frontend/blob/master/public/images/screenshots/product.png) | ![Авторизация](https://github.com/dag0S/42-shop-frontend/blob/master/public/images/screenshots/auth.png) |
 
 ---
 
@@ -55,3 +55,4 @@ npm install
 
 # Запускаем локально
 npm run dev
+```
