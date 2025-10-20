@@ -14,9 +14,9 @@ export const MenuItem: FC<Props> = ({ route }) => {
 		<Link
 			href={route.link}
 			className={cn(
-				"flex items-center gap-x-3 text-slate-500 text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-blue-200/20 hover:text-blue-500 hover:drop-shadow-sm bg-transparent transition-all duration-200",
+				"flex items-center gap-x-3 text-foreground text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-primary/10 hover:text-primary hover:drop-shadow-sm bg-transparent transition-all duration-200",
 				{
-					"text-sm text-blue-500 bg-blue-200/20 hover:bg-blue-200/20 hover:text-blue-500":
+					"text-sm text-primary bg-primary/10 hover:bg-primary/10 hover:text-primary":
 						pathname === route.link,
 				},
 			)}

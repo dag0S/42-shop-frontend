@@ -1,6 +1,5 @@
 "use client";
 
-import { useParams } from "next/navigation";
 import type { FC } from "react";
 
 import { formatDate } from "@/src/shared/utils";
@@ -41,7 +40,7 @@ export const Reviews: FC = () => {
 						<DataTable
 							columns={reviewColumns}
 							data={formattedReviews}
-							filterKey="name"
+							filterKey="username"
 						/>
 					</div>
 				</>
