@@ -19,7 +19,7 @@ export const Logo: FC<Props> = ({ className }) => {
 				className,
 			)}
 		>
-			<Image src="/images/logo.svg" alt={SITE_NAME} width={150} height={36} />
+			<Image src="/images/logo.svg" alt={SITE_NAME} width={150} height={36} className="min-w-[150px]" />
 		</Link>
 	);
 };

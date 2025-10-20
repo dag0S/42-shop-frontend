@@ -7,6 +7,8 @@ import {
 	Button,
 	Sheet,
 	SheetContent,
+	SheetHeader,
+	SheetTitle,
 	SheetTrigger,
 } from "@/src/shared/shadcn/ui";
 import { Heading } from "@/src/shared/ui";
@@ -31,6 +33,9 @@ export const Cart: FC = () => {
 				<Button variant="ghost">Корзина</Button>
 			</SheetTrigger>
 			<SheetContent className="h-full flex flex-col p-6">
+				<SheetHeader className="hidden">
+					<SheetTitle></SheetTitle>
+				</SheetHeader>
 				<Heading title="Корзина товаров" className="text-xl" />
 				<div className="flex flex-col w-full flex-1">
 					{items.length ? (

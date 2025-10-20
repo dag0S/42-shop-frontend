@@ -6,13 +6,18 @@ import { Search } from "lucide-react";
 
 import { Button, Input } from "../shadcn/ui";
 import { PUBLIC_URL } from "../config/url.config";
+import { cn } from "../lib/utils";
 
-export const SearchInput: FC = () => {
+interface Props {
+	className?: string;
+}
+
+export const SearchInput: FC<Props> = ({ className }) => {
 	const [searchBy, setSearchBy] = useState<string>("");
 	const router = useRouter();
 
 	return (
-		<div className="flex items-center relative">
+		<div className={cn("flex items-center relative", className)}>
 			<Input
 				placeholder="Поиск товаров"
 				value={searchBy}

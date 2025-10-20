@@ -29,7 +29,7 @@ export const Header: FC = () => {
 								alt={user.name}
 								width={42}
 								height={42}
-								className="rounded-full"
+								className="rounded-full hidden sm:block"
 							/>
 						</>
 					)
