@@ -15,15 +15,7 @@
 
 ## Стек технологий
 
-- **Next.js 15**
-- **TypeScript**
-- **Tailwind CSS**
-- **ShadCN/UI**
-- **TanStack Query**
-- **React Hook Form**
-- **Axios**
-- **ЮKassa**
-- **ESLint + Prettier**
+**Next.js 15** | **TypeScript** | **Tailwind CSS** | **ShadCN/UI** | **TanStack Query** | **React Hook Form** | **Axios** | **ЮKassa** | **ESLint + Prettier**
 
 ---
 
