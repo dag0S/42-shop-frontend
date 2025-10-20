@@ -8,3 +8,4 @@ export { DataTableLoading } from "./DataTableLoading";
 export { ImageUpload } from "./ImageUpload/ImageUpload";
 export { SearchInput } from "./SearchInput";
 export { ReviewModal } from "./ReviewModal";
+export { Announcement } from "./Announcement";

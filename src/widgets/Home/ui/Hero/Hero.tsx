@@ -17,12 +17,12 @@ export const Hero: FC<Props> = ({ className }) => {
 		<div className={cn("my-6 relative", className)}>
 			<div className="text-center flex flex-col items-center space-y-6 mx-auto max-w-4xl absolute z-20 left-1/2 top-1/2 -translate-1/2">
 				<h1 className="text-2xl sm:text-4xl font-bold tracking-tight md:text-5xl text-white">
-					Мерч <span className="text-blue-600">5opka</span> и{" "}
-					<span className="text-blue-600">Mellsher</span>
+					Мерч <span className="text-primary">5opka</span> и{" "}
+					<span className="text-primary">Mellsher</span>
 				</h1>
 				<p className="hidden md:block text-lg text-white">{SITE_DESCRIPTION}</p>
 				<Link href={PUBLIC_URL.explorer()}>
-					<Button className="group">
+					<Button className="group uppercase">
 						За покупками
 						<ArrowRight className="size-4 transition-all group-hover:ml-2" />
 					</Button>
