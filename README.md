@@ -8,7 +8,7 @@
 
 ## Демо
 
-🔗 **Frontend:** null
+🔗 **Live Demo:** null
 <br/>
 🔗 **Backend (GitHub):** [https://github.com/dag0S/42-shop-backend](https://github.com/dag0S/42-shop-backend)
 
